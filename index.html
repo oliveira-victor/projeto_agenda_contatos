@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="bottom-space">Agenda de contatos</h1>
+            <p class="bottom-space">Para cadastrar, digite o <b>nome e sobrenome</b> e <b>número para contato</b>.</p>
+        </header>
+        <form id="form-cadastro">
+            <input type="text" id="nome" required placeholder="Nome e sobrenome" />
+            <input type="tel" id="tel" required placeholder="Telefone" />
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p class="error-message">* É necessário nome e sobrenome.</p>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Telefone
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Número de cadastrados:</td>
+                    <td id="numero-cadastros">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <footer>
+        <p>Victor Freire Oliveira</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
